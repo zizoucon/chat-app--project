@@ -50,10 +50,10 @@ const Post = () => {
           </Typography>
 
           <Typography gutterBottom variant="h6" 
-          color="textSecondary" component="h2">
+          color="textPrimary" component="h2">
             {post.tags.map((tag) => (
             <Link to={`/tags/${tag}`} 
-            style={{ textDecoration: 'none', color: '#f50057' }}>
+            style={{ textDecoration: 'none', color: '#303f9f' }}>
               {` #${tag} `}
 
             </Link>
@@ -68,7 +68,7 @@ const Post = () => {
           </Typography>
           <Typography variant="h6">
           Créé par:
-            <Link to={`/creators/${post.name}`} style={{ textDecoration: 'none', color: '#f50057' }}>
+            <Link to={`/creators/${post.name}`} style={{ textDecoration: 'none', color: '#303f9f' }}>
               {` ${post.name}`}
             </Link>
           </Typography>

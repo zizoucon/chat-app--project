@@ -92,7 +92,7 @@ const Post = ({ post, setCurrentId }) => {
 
         <div className={classes.details}>
           <Typography variant="body2" 
-          color="textSecondary" 
+          color="textPrimary" 
           component="h2">
           {post.tags.map((tag) => `#${tag} `)}
           </Typography>
@@ -106,7 +106,7 @@ const Post = ({ post, setCurrentId }) => {
 
         <CardContent>
           <Typography variant="body2"
-           color="textSecondary" 
+           color="textPrimary" 
            component="p">
           {post.message.split(' ').splice(0, 20).join(' ')}...</Typography>
         </CardContent>
@@ -114,7 +114,7 @@ const Post = ({ post, setCurrentId }) => {
 
       <CardActions className={classes.cardActions}>
         <Button size="small" 
-     color="secondary"
+     color="primary"
          disabled={!user?.result}
          onClick={handleLike}>
           <Likes />
@@ -123,7 +123,7 @@ const Post = ({ post, setCurrentId }) => {
 
         {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
           <Button size="small" 
-          color="secondary" 
+          color="primary" 
           onClick={() => dispatch(deletePost(post._id))}>
             <DeleteIcon fontSize="small" /> &nbsp; Effacer
           </Button>

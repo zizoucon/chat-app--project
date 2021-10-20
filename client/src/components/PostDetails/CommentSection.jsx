@@ -47,7 +47,7 @@ const CommentSection = ({ post }) => {
           <Button style={{ marginTop: '10px' }} 
           fullWidth 
           disabled={!comment.length} 
-          color="secondary" variant="contained" 
+          color="primary" variant="contained" 
           onClick={handleComment}>
           Commenter
           </Button>

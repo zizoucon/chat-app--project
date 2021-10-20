@@ -65,7 +65,7 @@ const Form = ({ currentId, setCurrentId }) => {
       onSubmit={handleSubmit}>
 
         <Typography variant="h6">
-          {currentId ? `Modifier "${post?.title}"` : 'Ecrire un souvenir'}
+          {currentId ? `Modifier "${post?.title}"` : 'Ecrire un Post'}
         </Typography>
 
         <TextField name="title"
@@ -103,7 +103,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
         <Button className={classes.buttonSubmit}
          variant="contained" 
-         color="secondary"
+         color="primary"
          size="large" 
          type="submit" fullWidth>Ajouter
          </Button>

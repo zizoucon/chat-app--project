@@ -14,6 +14,7 @@ router.post('/', auth,  createPost);
 router.patch('/:id', auth, updatePost);
 router.delete('/:id', auth, deletePost);
 router.patch('/:id/likePost', auth, likePost);
+// patch pour updating existing data
 router.post('/:id/commentPost', commentPost);
 
 export default router;

@@ -55,10 +55,19 @@ const Home = () => {
             <Paper  elevation={6}>
           <Typography variant="h6" align="center" color="textSecondary" paragraph>
              
-            Les souvenirs sont des trésors,Ils nous éclairent dans la nuit,
-             meublent nos esprits,
-             et donnent un sens à notre vie.
-              C’est grâce à eux qu’on ne vivra, les meilleurs moments d’autrefois.
+  
+          Fondé en 2015 par de jeunes passionnés d’entreprenariat 
+          et de marketing numérique, Sylabs est une entreprise
+           offrant un soutien d’accompagnement aux start-ups et
+            jeunes entrepreneur-e-s. Situé dans la rue Hassani
+             Yessad à quelques minutes de la Grande Poste au
+              coeur du centre-ville d’Alger, il est le premier
+               espace de coworking (espace de travail collaboratif 
+           en réseau) dans le pays. Il a été mis en place sous l’impulsion de Abdellah Mallek, également à l’origine de nombreuses start-ups, suite à son constat d’une absence d’espaces de travail dans la capitale.
+
+
+
+
             
             </Typography>
             </Paper >
@@ -69,7 +78,7 @@ const Home = () => {
              position="static" color="inherit">
               <TextField onKeyDown={handleKeyPress}
                name="search" variant="outlined" 
-               label="Rechercher des souvenirs" fullWidth value={search} onChange={(e) => setSearch(e.target.value)} />
+               label="Rechercher des Posts" fullWidth value={search} onChange={(e) => setSearch(e.target.value)} />
               <ChipInput
                 style={{ margin: '10px 0' }}
                 value={tags}
@@ -80,7 +89,7 @@ const Home = () => {
               />
               <Button onClick={searchPost} 
               className={classes.searchButton} 
-              variant="contained" color="secondary">Chercher</Button>
+              variant="contained" color="primary">Chercher</Button>
             </AppBar>
             <Form currentId={currentId} setCurrentId={setCurrentId} />
             {(!searchQuery && !tags.length) && (
